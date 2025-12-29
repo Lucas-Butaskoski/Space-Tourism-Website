@@ -32,13 +32,12 @@ Os usuários devem ser capazes de:
 
 ### Screenshot
 
-![Screenshot da solução](./screenshot.jpg)
+![Screenshot da solução](https://github.com/Lucas-Butaskoski/Space-Tourism-Website/blob/main/Site-Desktop.jpeg)
 
 > Captura de tela do layout final do projeto em desktop e mobile.
 
 ### Links
 
-- URL da solução: https://www.frontendmentor.io/solutions/space-tourism-website-html-css-js
 - URL do site ao vivo: https://lucas-butaskoski.github.io/Space-Tourism-Website/
 
 ---
