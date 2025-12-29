@@ -16,7 +16,6 @@ Esta é uma solução para o desafio **Space tourism website** do Frontend Mento
     - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
     - [Recursos úteis](#recursos-úteis)
   - [Autor](#autor)
-  - [Agradecimentos](#agradecimentos)
 
 ---
 
@@ -88,11 +87,5 @@ Para melhorar este projeto no futuro, pretendo:
 
 ## Autor
 
-- GitHub — [Seu nome ou usuário](https://github.com/SEU-USUARIO)
-- Frontend Mentor — [@seuusuario](https://www.frontendmentor.io/profile/SEU-USUARIO)
+- GitHub — [Lucas Butaskoski](https://github.com/Lucas-Butaskoski)
 
----
-
-## Agradecimentos
-
-Agradeço ao **Frontend Mentor** pelo desafio e a todos os criadores de conteúdo que compartilham conhecimento e ajudam no aprendizado de desenvolvimento front-end.
