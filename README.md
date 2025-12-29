@@ -39,7 +39,7 @@ Os usuários devem ser capazes de:
 ### Links
 
 - URL da solução: https://www.frontendmentor.io/solutions/space-tourism-website-html-css-js
-- URL do site ao vivo: https://SEU-USUARIO.github.io/space-tourism-website/
+- URL do site ao vivo: https://lucas-butaskoski.github.io/Space-Tourism-Website/
 
 ---
 
