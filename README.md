@@ -15,7 +15,6 @@ Esta é uma solução para o desafio **Space tourism website** do Frontend Mento
     - [O que aprendi](#o-que-aprendi)
     - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
     - [Recursos úteis](#recursos-úteis)
-  - [Autor](#autor)
 
 ---
 
@@ -84,9 +83,4 @@ Para melhorar este projeto no futuro, pretendo:
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [Kevin Powell (YouTube)](https://www.youtube.com/kepowob)
 
----
-
-## Autor
-
-- GitHub — [Lucas Butaskoski](https://github.com/Lucas-Butaskoski)
 
