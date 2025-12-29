@@ -1,0 +1,444 @@
+/* ================================================= */
+/* GOOGLE FONTS — DESAFIO                            */
+/* ================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+/* ================================================= */
+/* RESET & BASE                                      */
+/* ================================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #0b0d17;
+    color: white;
+    min-height: 100vh;
+}
+
+main {
+    padding: 4rem 2rem;
+}
+
+/* ================================================= */
+/* TIPOGRAFIA GLOBAL                                 */
+/* ================================================= */
+
+h1, h2, h3 {
+    font-family: 'Bellefair', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h5, nav a, .page-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #d0d6f9;
+}
+
+/* ================================================= */
+/* HEADER & NAVEGAÇÃO                                */
+/* ================================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem 4rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+/* ================================================= */
+/* MENU HAMBÚRGUER                                   */
+/* ================================================= */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 2000;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ================================================= */
+/* TÍTULOS DE PÁGINA                                 */
+/* ================================================= */
+
+.page-title {
+    margin: 2rem 0;
+    font-size: 1.25rem;
+}
+
+.page-title span {
+    opacity: 0.25;
+    margin-right: 1rem;
+}
+
+/* ================================================= */
+/* HOME                                              */
+/* ================================================= */
+
+body.home {
+    background: url("home/background-home-desktop.jpg") no-repeat center / cover;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+}
+
+.home-text {
+    max-width: 450px;
+}
+
+.home-text h5 {
+    font-size: 1rem;
+}
+
+.home-text h1 {
+    font-size: 6rem;
+    margin: 1rem 0;
+}
+
+.home-text p {
+    line-height: 1.8;
+}
+
+.home-explore a {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    color: #0b0d17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bellefair', serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.home-explore a:hover {
+    box-shadow: 0 0 0 40px rgba(255,255,255,0.1);
+}
+
+/* ================================================= */
+/* DESTINATION                                       */
+/* ================================================= */
+
+body.destination {
+    background: url("destination/background-destination-desktop.jpg") no-repeat center / cover;
+}
+
+.destination-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.destination-image img {
+    width: 350px;
+    max-width: 100%;
+}
+
+.destination-info {
+    max-width: 520px;
+}
+
+.destination-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.destination-tabs button {
+    background: none;
+    border: none;
+    color: #d0d6f9;
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;          
+    letter-spacing: 2.7px;
+}
+
+.destination-tabs button.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.destination-info h1 {
+    font-size: 5rem;
+}
+
+.destination-info p {
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.destination-stats {
+    display: flex;
+    gap: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 2rem;
+}
+
+/* ================================================= */
+/* CREW                                              */
+/* ================================================= */
+
+body.crew {
+    background: url("crew/background-crew-desktop.jpg") no-repeat center / cover;
+}
+
+.crew-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.crew-info {
+    max-width: 540px;
+}
+
+.crew-details h3 {
+    opacity: 0.5;
+    font-family: 'Bellefair', serif;
+}
+
+.crew-details h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+}
+
+.crew-details p {
+    line-height: 1.8;
+}
+
+.crew-tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.crew-tabs button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.25);
+}
+
+.crew-tabs button.active {
+    background: white;
+}
+
+/* ================================================= */
+/* TECHNOLOGY                                        */
+/* ================================================= */
+
+body.technology {
+    background: url("technology/background-technology-desktop.jpg") no-repeat center / cover;
+}
+
+.technology-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.technology-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.technology-tabs button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+}
+
+.technology-tabs button.active {
+    background: white;
+    color: black;
+}
+
+.technology-info {
+    max-width: 520px;
+}
+
+.technology-info p {
+    line-height: 1.8;
+}
+
+.technology-image img {
+    width: 450px;
+    max-width: 100%;
+}
+
+/* ================================================= */
+/* FADE ANIMATIONS                                   */
+/* ================================================= */
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* ================================================= */
+/* TABLET                                           */
+/* ================================================= */
+
+@media (max-width: 1024px) {
+
+    .home-content,
+    .destination-content,
+    .crew-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .technology-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .technology-tabs {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .destination-info,
+    .crew-info,
+    .technology-info {
+        max-width: 100%;
+    }
+}
+
+/* ================================================= */
+/* MOBILE                                           */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        inset: 0 0 0 auto;
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 8rem 2rem;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+    }
+
+    .nav-menu.open {
+        transform: translateX(0);
+    }
+
+    .home-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .destination-info p,
+    .crew-details p,
+    .technology-info p {
+        font-size: 0.95rem;
+    }
+}
