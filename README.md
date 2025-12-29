@@ -32,7 +32,9 @@ Os usuários devem ser capazes de:
 
 ### Screenshot
 
-![Screenshot da solução](https://github.com/Lucas-Butaskoski/Space-Tourism-Website/blob/main/Site-Desktop.jpeg)
+![Screenshot da solução Desktop](https://github.com/Lucas-Butaskoski/Space-Tourism-Website/blob/main/Site-Desktop.jpeg)
+
+![Screenshot da solução Mobile](https://github.com/Lucas-Butaskoski/Space-Tourism-Website/blob/main/Site-Mobile.jpeg)
 
 > Captura de tela do layout final do projeto em desktop e mobile.
 
